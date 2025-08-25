@@ -1,5 +1,5 @@
 import Header from "./components/Header"
-import Hero from "./components/Header/img/Hero"
+import Hero from "./components/Hero"
 
 import './global.css'
 
