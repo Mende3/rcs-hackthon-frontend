@@ -21,7 +21,10 @@
     "noUnusedParameters": false,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    
+    "useUnknownInCatchVariables": false,
+    "exactOptionalPropertyTypes": false
   },
   "include": ["src"]
 }

@@ -3,6 +3,7 @@ import React from "react";
 import { StatCards } from "./StatCards";
 import { ActivityGraph } from "./ActivityGraph";
 import { Visualizer } from "./Visualizer";
+import { RecentRequests } from "./RecentRequests";
 
 export const Grid = () => {
     return (
@@ -10,6 +11,7 @@ export const Grid = () => {
             <StatCards />
             <ActivityGraph />
             <Visualizer />
+            <RecentRequests />
         </div>
     )
 }

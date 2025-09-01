@@ -23,7 +23,6 @@ export const RouteSelect: React.FC<RouteSelectProps> = ({ Name }) => {
   return (
     <div className="space-y-1">
       <RouteButton Icon={RiDashboardLine } selected={Name === "dashboard"} title="Painel" to="/painel" />
-      <RouteButton Icon={BiAnalyse} selected={Name === "analysis"} title="Análise de respostas" to="/Analise"/>
       <RouteButton Icon={RiFileHistoryLine } selected={Name === "history"} title="Histórico" to="/Historico" />
       <RouteButton Icon={FiUser} selected={Name === "perfil"} title="Perfil" to="/Perfil" />
       <RouteButton Icon={FiSettings} selected={Name === "settings"} title="Configurações" to="/configuracao" />

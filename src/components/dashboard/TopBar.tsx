@@ -2,12 +2,16 @@ import React from "react";
 import { FiCalendar } from "react-icons/fi";
 import { StatCards } from "./StatCards";
 
+import { useUser } from "../../hooks/useUser";
+
 export const TopBar = () => {
+    const { user, isAuthenticated } = useUser();
+    
     return (
         <div className="border-b px-4 mb-4 mt-2 pb-4 border-white">
             <div className="flex items-center justify-between p-0.5">
                 <div>
-                    <span className="text-sm font-bold block text-white">Bom dia, Mendes</span>
+                    <span className="text-sm font-bold block text-white">Seja bem-vidno {user?.first_name}</span>
                     <span className="text-xs block text-white">
                         Sexta feira, 08 de Agosto 2025
                     </span>

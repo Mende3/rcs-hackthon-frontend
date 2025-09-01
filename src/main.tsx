@@ -6,6 +6,8 @@ import Dashboard from './pages/Dashboard'
 import ClientePedido from './pages/Client'
 import NotFound from './pages/NotFound'
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import { DetalhesCliente } from './pages/Details/index.tsx';
+import { HistoricoPage } from './pages/History/History.tsx';
 
 
 const router = createBrowserRouter([
@@ -14,6 +16,8 @@ const router = createBrowserRouter([
   { path:"/admin",element:<Dashboard/> },
   { path:"/clientePedido",element:<ClientePedido/> },
   { path:"/dashboard", element:<Dashboard />},
+  { path:"/detalhes/:email", element:<DetalhesCliente/>},
+  { path:"/historico", element:<HistoricoPage/>},
   { path:"/*",element:<NotFound/> },
 ]);
 
