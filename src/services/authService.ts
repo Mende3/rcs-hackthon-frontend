@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8000'; // URL base correta
+const API_URL = 'https://rcs-hackthon-django.onrender.com'; // URL base correta
 
 export interface User {
   id: number;
